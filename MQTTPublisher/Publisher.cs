@@ -49,10 +49,11 @@ namespace MQTTPublisher
                 if (client.IsConnected)
                 {
                     await client.PublishAsync(message);
+                Console.WriteLine($"Pulished MEssage -{messagePayload}");
                 }
                 
             }
 
-        }
+        
     }
 }
